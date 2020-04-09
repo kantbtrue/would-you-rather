@@ -1,0 +1,6 @@
+/* Font Weight */
+@each $i in $font_wt {
+  .font-weight__#{$i} {
+    font-weight: #{$i};
+  }
+}

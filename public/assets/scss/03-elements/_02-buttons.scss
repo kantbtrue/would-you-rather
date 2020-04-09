@@ -1,0 +1,33 @@
+/* Buttons */
+.btn {
+    color: #ffffff;
+
+    &:hover,
+    &:focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+        background: #ffffff;
+    }
+
+    &.btn-primary {
+
+        &:hover,
+        &:focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            border-color: $primary_color;
+            color: $primary_color;
+        }
+    }
+
+    &.btn-secondary {
+
+        &:hover,
+        &:focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            border-color: $secondary_color;
+            color: $secondary_color;
+        }
+    }
+}

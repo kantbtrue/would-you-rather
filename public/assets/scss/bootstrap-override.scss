@@ -1,0 +1,20 @@
+// Bootstrap Override
+@import 'variables';
+
+$theme-colors: (
+  'primary':   $primary_color,
+  'secondary': $secondary_color,
+  'light': #CACACA,
+  'dark': #707070,
+  'gold': #FFD700,
+  'silver': #C0C0C0,
+  'bronze': #CD7F32
+);
+
+// Border radius
+$border-radius:               0.625rem !default;
+$border-radius-lg:            0.65rem !default;
+$border-radius-sm:            0.225rem !default;
+
+// Extra override variables goes here
+@import '../vendors/bootstrap/scss/bootstrap';

@@ -1,0 +1,27 @@
+// Based on your :root font size
+$base_font_size: 16px;
+@function _px_converter($px, $base, $unit) {
+
+  @if (unitless($px)) {
+    $px: $px * 1px;
+  }
+  @if (unitless($base)) {
+    $base: $base * 1px;
+  }
+  @if ($unit == em) {
+    @return $px / $base * 1;
+  }
+  @else {
+    @return $px / $base * 1 + $unit;
+  }
+}
+
+// PX to REM or EM function
+@function px_conv($px, $unit: rem, $base: $base_font_size) {
+  $values: ();
+
+  @each $item in $px {
+    $values: append($values, _px_converter($item, $base, $unit));
+  }
+  @return $values;
+}

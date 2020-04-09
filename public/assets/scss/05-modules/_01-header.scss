@@ -1,0 +1,44 @@
+/* Header */
+.header {
+    position: relative;
+    z-index: 0;
+}
+.menu {
+
+    &-nav {
+        border-bottom-color: transparent;
+    }
+
+    .nav-link {
+        min-width: 120px;
+        margin: 0 5px;
+        padding: 16px 24px;
+        background: $primary_color;
+        color: #ffffff;
+        text-align: center;
+
+        &.active,
+        &:hover,
+        &:focus {
+            border-color: #ffffff;
+            background: #ffffff;
+            color: $primary_color;
+            z-index: 3;
+        }
+    }
+
+    .nav-item {
+
+        &:first-child {
+            .nav-link {
+                margin-left: 0;
+            }
+        }
+
+        &:last-child {
+            .nav-link {
+                margin-right: 0;
+            }
+        }
+    }
+}
